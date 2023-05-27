@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: rgb(145, 239, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+nav .circle{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 44px;
+    background: #fbfbfb;
+    color: #f53192;
+    box-shadow: 0 6px 5px rgba(255,26,26,0.22);
+    cursor: pointer;
+}
+nav .circle .fa-solid{
+    font-size: 18px;
+}
+.music_container{
+    background: #f6feff;
+    width: 450px;
+    
+    padding: 25px 35px;
+    text-align: center;
+    height: 88vh;
+    text-align: center;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0,0.3);
+    border-radius: 25px;
+}
+.music_container #title{
+    font-size: 35px;
+    margin-top: 25px;
+    font-weight: 500;
+    color: #333;
+    font-family:  cursive;
+
+   /* text-shadow: 0 0.3rem 0.5rem rgba(0, 0,0,0.3); */
+}
+.music_container #artist{
+    font-size: 18px;
+    color: #333;
+    margin-top: 5px;
+ }
+ /* .img_container{
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+ } */
+ .img_container img{
+    width: 310px;
+    border-radius: 50%;
+    border: 8px solid #f6f6f6;
+    box-shadow: 0 20px 20px rgba(104, 104, 104, 0.22);
+ }
+
+h4{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+
+ .music_controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ .music_controls div{
+    width: 50px;
+    height: 50px;
+    margin: 35px;
+    margin-top: 40px;
+    line-height: 55px;
+    /* background:#ffffff; */
+    color: #020202;
+    border-radius: 50%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 60px rgba(255,26,26,0.22);
+    cursor: pointer;
+ }
+ .music_controls .fas{
+    font-size: 18px;
+ }
+ .music_controls div:nth-child(2){
+    transform: scale(1.7);
+    background: #060606;
+    color: #ffffff;
+  
+ } 
+ .music_controls div:hover{
+    color:  #b7b7b7;
+ }
+ .music_controls div:nth-child(2):hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 12px 10px rgba(0,0,0,0.2);
+
+ }
+ .anime{
+    animation: rotatePlayer 4s linear  infinite;
+ }
+ @keyframes rotatePlayer {
+    from{transform: rotate(0deg);}
+    to{
+        transform: rotate(360deg);
+    }
+ }
+
+
+
+ /* progress style  */
+.progressbar_container{
+   width: 100%;
+   height: auto;
+   padding: 10px 0;
+   margin-top: 10px;
+} 
+.progress_div{
+   width: 100%;
+   height: 5px;
+   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.22);
+   border-radius: 40px;
+   position: relative;
+   margin-top: 5px;
+   /* transition:  1s linear ;
+   -moz-transition:  1s linear;
+   -o-transition:  1s linear;
+   -webkit-transition:  1s linear; */
+   cursor: pointer;
+   -webkit-appearance: none;
+   appearance: none;
+}
+.progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.22);
+    border-radius: 40px;
+    background-color: rgb(255, 33, 151);
+    transition: all 1s linear ;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.progres_duration_meter{
+   display: flex;
+   justify-content: space-between;
+   font-size: 19px;
+}
+.progress_input{
+   width: 100%;
+}
+
+
