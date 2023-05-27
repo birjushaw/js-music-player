@@ -15,31 +15,32 @@ const progress_div = document.getElementById("progress_div")
 const songs = [
   {
     name: "music-1",
-    // imgs : "img 1",
+    imgs : "music-1i",
     title: "Ganga Dharaye shiv",
     artist: "Depak Chamoli",
+
   },
   {
     name: "music-2",
-    // imgs : "img 2",
+    imgs : "music-2i",
     title: "Ram siya ram",
     artist: "Sachet Tandon ",
   },
   {
     name: "music-3",
-    // imgs : "img 3",
+    imgs : "music-3i",
     title: "Hanuman Astak",
     artist: "Gulsan Kumar ",
   },
   {
     name: "music-4",
-    // imgs : "img 3",
+    imgs : "music-4i",
     title: "Sukh Karta Dukh Harta",
     artist: "Ravi Singha ",
   },
   {
     name: "music-5",
-    // imgs : "img 3",
+    imgs : "music-5i",
     title: "Yashomati Maiya se",
     artist: "Shivam Sundaram",
   },
@@ -69,11 +70,11 @@ const loadSong = (songs) => {
   title.textContent = songs.title;
   artist.textContent = songs.artist;
   music.src = "Media/" + songs.name + ".mp4";
-  img.src = "images/" + songs.name + ".jpg";
+  img.src = "images/" + songs.imgs + ".jpg";
 };
 
 let songIndex = 0;
-// loadSong(songs[0])
+loadSong(songs[0])
 const nextSong = () => {
   songIndex = (songIndex + 1) % songs.length;
   loadSong(songs[songIndex]);
