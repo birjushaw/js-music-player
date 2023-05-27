@@ -34,11 +34,11 @@ nav .circle .fa-solid{
 }
 .music_container{
     background: #f6feff;
-    width: 450px;
+    width: 400px;
     
     padding: 25px 35px;
     text-align: center;
-    height: 88vh;
+    height: 80vh;
     text-align: center;
     box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0,0.3);
     border-radius: 25px;
@@ -63,7 +63,7 @@ nav .circle .fa-solid{
     margin: auto;
  } */
  .img_container img{
-    width: 310px;
+    width: 250px;
     border-radius: 50%;
     border: 8px solid #f6f6f6;
     box-shadow: 0 20px 20px rgba(104, 104, 104, 0.22);
